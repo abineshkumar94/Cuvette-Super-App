@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* 
+.img-container {
+    
+}; */
+
+.container-text{
+        font-family: Roboto, sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 77.93px;
+        letter-spacing: 2%;
+        position: absolute;
+        bottom: 34px;
+        left: 18px;
+        color: #FFFFFF;
+
+} 
+
+.container-text-1{
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 77.93px;
+    letter-spacing: 2%;
+    position: absolute;
+    bottom: 8px;
+    left: 18px;
+    color:  #FFFFFF;
+
+
+} 

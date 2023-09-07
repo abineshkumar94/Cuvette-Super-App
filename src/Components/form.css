@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+
+.form-input {
+  position: absolute;
+  top: 20%;
+  left: 62%;
+  padding: 10px;
+  margin-top: -20px;
+  
+}
+
+input {
+  display: block;
+  padding: 4px;
+  background-color: #292929;
+  border: none;
+  margin-bottom: 35px;
+  margin-top: -20px;
+  color: #ffffff;
+}
+
+.super-app {
+  font-family: "Single Day", cursive;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 172px;
+  color: #72db73;
+  padding: 20px;
+  margin-top: -75px;
+}
+
+.cyna {
+  width: 292px;
+  top: 213px;
+  left: 1160px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: -70px;
+}
+
+.btn {
+  width: 180px;
+  height: 25px;
+  top: 761px;
+  left: 1047px;
+  border-radius: 28px;
+  border: none;
+  background: #72db73;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+  margin-left: -6px;
+  margin-top: -90px;
+}
+
+.h-five {
+  width: 518px;
+  height: 53px;
+  top: 841px;
+  left: 1047px;
+  font-family: Roboto;
+  font-size: 6px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #7c7c7c;
+}
+
+.h-five-1 {
+  width: 518px;
+  height: 53px;
+  font-family: Roboto;
+  font-size: 6px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #72db73;
+}
+
+.h-five-2 {
+  width: 518px;
+  height: 53px;
+  font-family: Roboto;
+  font-size: 6px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #72db73;
+  margin-top: -54px;
+}
+
+.h-five-01 {
+  width: 518px;
+  height: 53px;
+  top: 841px;
+  left: 1047px;
+  font-family: Roboto;
+  font-size: 6px;
+  font-weight: 600;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #7c7c7c;
+  margin-top: -45px;
+}
+
+.h-five-3 {
+  width: 518px;
+  height: 53px;
+  font-family: Roboto;
+  font-size: 6px;
+  font-weight: 600;
+  line-height: 2px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #72db73;
+  margin-top: -45px;
+}
+
+.h-five-4 {
+  width: 518px;
+  height: 53px;
+  font-family: Roboto;
+  font-size: 6px;
+  font-weight: 600;
+  line-height: 2px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #72db73;
+  margin-top: -41px;
+}
+
+.check-box-text {
+  width: 518px;
+  height: 18px;
+  top: 841px;
+  left: 1047px;
+  font-family: Roboto;
+  font-size: 7px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #7c7c7c;
+  margin-top: -50px;
+  margin-left: 20px;
+}
+
+.check-box:checked::after {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  font-size: 14px;
+  color: blueviolet;
+  border: none;
+  width: 7px;
+  height: 7px;
+}
+
+.error-message {
+  color: #FF0000;
+  font-size: 5px;
+  max-height: 5px;
+  margin-top: 2px;
+  margin-bottom: -5px;
+}
+
+
+
