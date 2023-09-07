@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import "./form.css";
 
 const Form = (props) => {
-  // Define state variables for form inputs and validation
+ 
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [isChecked, setIsChecked] = useState(false);
 
-  // Define state variables for input validation errors
+ 
   const [nameError, setNameError] = useState("");
   const [usernameError, setUsernameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [mobileError, setMobileError] = useState("");
   const [isCheckedError, setIsCheckedError] = useState("");
 
-  // Event handlers to update state when inputs change
+  
   const handleNameChange = (e) => {
     setName(e.target.value);
     setNameError("");
@@ -42,13 +42,13 @@ const Form = (props) => {
     setIsCheckedError("");
   };
 
-  // Form submission handler (you can define your submission logic here)
+  
   const handleSubmit = (e) => {
     e.preventDefault();
 
     let formIsValid = true;
 
-    // Validation checks
+   
     if (name === "") {
       setNameError("Field is required");
       formIsValid = false;
@@ -71,9 +71,9 @@ const Form = (props) => {
       formIsValid = false;
     }
 
-    // Check if all fields are filled before proceeding
+    
     if (formIsValid) {
-      // Your submission logic here
+      
       console.log("Form submitted with data:", {
         name,
         username,
