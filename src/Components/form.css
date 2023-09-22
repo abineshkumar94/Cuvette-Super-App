@@ -176,9 +176,10 @@ input {
   color: #FF0000;
   font-size: 5px;
   max-height: 5px;
-  margin-top: 2px;
-  margin-bottom: -5px;
+  /* margin-top: 2px; */
+  /* margin-bottom: -5px; */
 }
+
 
 
 

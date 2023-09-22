@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+.super-app1 {
+  font-family: "Single Day", cursive;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 172px;
+  color: #72db73;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.choose {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.line {
+  display: block;
+  margin-bottom: -15px;
+  position: relative;
+  top: -30px;
+  margin-left: 50px;
+}
+
+/* .btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 375px;
+  margin-top: -205px;
+} */
+
+.btn-row {
+  display: flex;
+  margin-left: 350px;
+  margin-top: -205px;
+}
+
+/* .btn-row1 {
+  display: flex;
+  margin-right: 25px;
+  margin-bottom: 20px;
+} */
+
+.btn1 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 25px;
+  display: flex;
+}
+
+.btn2 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-left: 18px;
+}
+
+.btn3 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-left: 18px;
+}
+
+.btn4 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 128px;
+  flex-wrap: nowrap;
+  margin-left: -320px;
+  display: flex;
+}
+
+.btn5 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 128px;
+  flex-wrap: nowrap;
+  margin-left: 18px;
+  display: flex;
+}
+
+.btn6 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 128px;
+  flex-wrap: nowrap;
+  margin-left: 16px;
+  display: flex;
+}
+
+.btn7 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 231px;
+  flex-wrap: nowrap;
+  margin-left: -318px;
+  display: flex;
+}
+
+.btn8 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 231px;
+  flex-wrap: nowrap;
+  margin-left: 18px;
+  display: flex;
+}
+
+.btn9 {
+  height: 70px;
+  width: 70px;
+  background-color: #000000;
+  border: none;
+  margin-right: 25px;
+  margin-top: 231px;
+  flex-wrap: nowrap;
+  margin-left: 14px;
+  display: flex;
+}
+
+.selected-category-button {
+  position: absolute;
+  background-color: #148a08;
+  color: #ffffff;
+  border: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 31px;
+  margin-top: -108px;
+  margin-left: 49px;
+  width: 84px;
+  height: 22px;
+  flex: auto;
+}
+
+.selected-category-button:hover {
+  background-color: #56b656;
+}
+
+/* ... (remaining CSS rules) ... */
+
+.close-button {
+  font-size: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: -0.2px;
+  color: rgb(22, 21, 21);
+}
+
+.selected-categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.selected-category-button.action {
+  margin-left: 20px;
+  margin-top: -183px;
+}
+
+.selected-category-button.drama {
+  margin-left: 112px;
+  margin-top: -183px;
+}
+
+.selected-category-button.romance {
+  margin-left: 203px;
+  margin-top: -183px;
+}
+
+.selected-category-button.thriller {
+  margin-left: 21px;
+  margin-top: -123px;
+}
+
+.selected-category-button.western {
+  margin-left: 112px;
+  margin-top: -123px;
+}
+
+.selected-category-button.horror {
+  margin-left: 203px;
+  margin-top: -123px;
+}
+
+.selected-category-button.fantasy {
+  margin-left: 21px;
+  margin-top: -65px;
+}
+
+.selected-category-button.music {
+  margin-left: 112px;
+  margin-top: -65px;
+}
+
+.selected-category-button.fiction {
+  margin-left: 202px;
+  margin-top: -64px;
+}
+
+.error-selection {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #ff0000;
+  margin-top: -32px;
+  margin-left: 62px;
+}
+
+.selected-card {
+  border: 2px solid rgb(61, 248, 61);
+}
+
+.next-btn-div {
+  margin-left: 585px;
+  margin-top: 31px;
+}
+
+.btn-next {
+  width: 85px;
+  height: 22px;
+  border-radius: 38.86px;
+  border: none;
+  background: #148a08;
+  cursor: pointer;
+}
+
+.btn-next-text {
+  font-family: DM Sans;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: -3px;
+  white-space: nowrap;
+  
+  
+
+}

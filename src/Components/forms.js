@@ -19,6 +19,7 @@ const Form = (props) => {
   
   const handleNameChange = (e) => {
     setName(e.target.value);
+    
     setNameError("");
   };
 
