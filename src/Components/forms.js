@@ -1,25 +1,24 @@
 import React, { useState } from "react";
 import "./form.css";
+import Image1 from "./image-1";
+import { useNavigate } from "react-router-dom";
 
-const Form = (props) => {
- 
+const Form = ({ setFormSubmitted }) => {
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [isChecked, setIsChecked] = useState(false);
-
- 
   const [nameError, setNameError] = useState("");
   const [usernameError, setUsernameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [mobileError, setMobileError] = useState("");
   const [isCheckedError, setIsCheckedError] = useState("");
 
-  
+  const navigate = useNavigate();
+
   const handleNameChange = (e) => {
     setName(e.target.value);
-    
     setNameError("");
   };
 
@@ -43,13 +42,11 @@ const Form = (props) => {
     setIsCheckedError("");
   };
 
-  
   const handleSubmit = (e) => {
     e.preventDefault();
 
     let formIsValid = true;
 
-   
     if (name === "") {
       setNameError("Field is required");
       formIsValid = false;
@@ -72,21 +69,18 @@ const Form = (props) => {
       formIsValid = false;
     }
 
-    
     if (formIsValid) {
       
-      console.log("Form submitted with data:", {
-        name,
-        username,
-        email,
-        mobile,
-        isChecked,
-      });
+      setFormSubmitted(true);
+      navigate("/Page2"); 
     }
   };
 
   return (
     <div className="form-input">
+      <div>
+        <Image1 />
+      </div>
       <form onSubmit={handleSubmit}>
         <h2 className="super-app">Super app</h2>
         <h3 className="cyna">Create your new account</h3>
@@ -145,5 +139,9 @@ const Form = (props) => {
 };
 
 export default Form;
+
+
+
+
 
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Catagory.css";
 import catimg1 from "../images/action.png";
 import catimg2 from "../images/drama.png";
@@ -12,12 +12,24 @@ import catimg9 from "../images/fiction.png";
 
 const Page2 = () => {
   const [selectedCategories, setSelectedCategories] = useState([]);
+  const [hideMinimumCategoriesText, setHideMinimumCategoriesText] = useState(false);
+  const [hideNextButton, setHideNextButton] = useState(true);
+
+  useEffect(() => {
+    
+    if (selectedCategories.length >= 3) {
+      setHideMinimumCategoriesText(true);
+      setHideNextButton(false);
+    } else {
+      setHideMinimumCategoriesText(false);
+      setHideNextButton(true);
+    }
+  }, [selectedCategories]);
 
   const handleCategoryClick = (category) => {
-    // Check if the category is already selected, and if not, add it to the list
     if (!selectedCategories.includes(category)) {
       setSelectedCategories([...selectedCategories, category]);
-
+      
       const categoryButton = document.querySelector(`.btn${category}`);
       if (categoryButton) {
         categoryButton.classList.add("selected-card");
@@ -26,10 +38,9 @@ const Page2 = () => {
   };
 
   const removeCategory = (category) => {
-    // Remove the selected category from the list
     const updatedCategories = selectedCategories.filter((c) => c !== category);
     setSelectedCategories(updatedCategories);
-
+    
     const categoryButton = document.querySelector(`.btn${category}`);
     if (categoryButton) {
       categoryButton.classList.remove("selected-card");
@@ -172,23 +183,29 @@ const Page2 = () => {
                 className="close-button"
                 onClick={() => removeCategory(category)}
               >
-                ×
+                × {/* Close icon */}
               </span>
             </button>
           ))}
         </div>
       )}
-      <div className="error-selection">
-        <p>Minimum 3 category required</p>
-      </div>
-
-      <div className="next-btn-div " >
-        <button className="btn-next">
-          <p className="btn-next-text">Next page</p>
-        </button>
-      </div>
+      {/* Minimum 3 category required text */}
+      {!hideMinimumCategoriesText && (
+        <div className="error-selection">
+          <p>Minimum 3 categories required</p>
+        </div>
+      )}
+      {/* Next page button */}
+      {!hideNextButton && (
+        <div className="next-btn-div">
+          <button className="btn-next">
+            <p className="btn-next-text">Next page</p>
+          </button>
+        </div>
+      )}
     </div>
   );
 };
 
 export default Page2;
+
