@@ -11,7 +11,8 @@ import catimg8 from "../images/music.png";
 import catimg9 from "../images/fiction.png";
 
 const Page2 = () => {
-  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState(
+    JSON.parse(localStorage.getItem("selectedCategories")) || [])
   const [hideMinimumCategoriesText, setHideMinimumCategoriesText] = useState(false);
   const [hideNextButton, setHideNextButton] = useState(true);
 
@@ -24,6 +25,7 @@ const Page2 = () => {
       setHideMinimumCategoriesText(false);
       setHideNextButton(true);
     }
+    localStorage.setItem("selectedCategories", JSON.stringify(selectedCategories));
   }, [selectedCategories]);
 
   const handleCategoryClick = (category) => {

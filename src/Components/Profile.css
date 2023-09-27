@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.pro-box {
+  width: 225px;
+  height: 105px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 19px;
+  background-color: #5746ea;
+}
+
+.pro-img {
+  position: absolute;
+  width: 109px;
+  height: 267px;
+  top: 33px;
+  left: 38px;
+  border-radius: 42.42px;
+  border: 3.66px;
+}
+
+.pro-info {
+  color: #ffffff;
+}
+
+.pro-one {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.pro-two {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.pro-three {
+  font-family: Roboto;
+  position: absolute;
+  top: 40px;
+  left: 99px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.cat-1 {
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15px;
+  font-size: 12px;
+  width: 61px;
+  height: 15px;
+  top: 77px;
+  left: 94px;
+  border-radius: 36.95px;
+  text-align: center;
+  padding: 2px;
+  background: #9f94ff;
+}
+
+.cat-2 {
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15px;
+  font-size: 12px;
+  width: 61px;
+  height: 15px;
+  top: 77px;
+  left: 168px;
+  border-radius: 36.95px;
+  text-align: center;
+  padding: 2px;
+  background: #9f94ff;
+}
+
+.cat-3 {
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15px;
+  font-size: 12px;
+  width: 61px;
+  height: 15px;
+  top: 101px;
+  left: 94px;
+  border-radius: 36.95px;
+  text-align: center;
+  padding: 2px;
+  background: #9f94ff;
+}
+
+.cat-4 {
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15px;
+  font-size: 12px;
+  width: 61px;
+  height: 15px;
+  top: 101px;
+  left: 168px;
+  border-radius: 36.95px;
+  text-align: center;
+  padding: 2px;
+  background: #9f94ff;
+}
+
+.weather-box1 {
+  position: absolute;
+  width: 225px;
+  height: 65px;
+  top: 138px;
+  left: 20px;
+  border-radius: 19px;
+  background: #101744;
+}
+
+.weather-time {
+  position: absolute;
+  width: 225px;
+  height: 23px;
+  top: 138px;
+  left: 20px;
+  border-radius: 19px,0px;
+  background: #ff4ade;
+}

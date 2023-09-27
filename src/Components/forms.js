@@ -70,10 +70,17 @@ const Form = ({ setFormSubmitted }) => {
     }
 
     if (formIsValid) {
-      
+      const userData = {
+        name,
+        username,
+        email,
+      };
+      localStorage.setItem("userData", JSON.stringify(userData));
       setFormSubmitted(true);
       navigate("/Page2"); 
     }
+
+  
   };
 
   return (
