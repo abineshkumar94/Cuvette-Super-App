@@ -1,0 +1,23 @@
+.note-textarea {
+  position: absolute;
+  width: 180px;
+  height: 173px;
+  left: 283px;
+  top: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f1c75b;
+  border-radius: 19px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000000;
+  overflow: auto;
+
+}
+
+

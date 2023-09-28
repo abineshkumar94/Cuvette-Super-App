@@ -1,8 +1,8 @@
 .weather-box1 {
   position: absolute;
-  width: 225px;
+  width: 237px;
   height: 73px;
-  top: 138px;
+  top: 140px;
   left: 20px;
   border-radius: 19px;
   background: #101744;
@@ -10,9 +10,9 @@
 
 .weather-time {
   position: absolute;
-  width: 225px;
+  width: 237px;
   height: 23px;
-  top: 138px;
+  top: 140px;
   left: 20px;
   border-radius: 19px, 0px;
   background: #ff4ade;
@@ -88,14 +88,14 @@
 .reading {
   position: absolute;
   color: #ffffff;
-  left: 24px;
-  top: 181px;
-  font-size: 8px;
+  left: 28px;
+  top: 179px;
+  font-size: 9px;
 }
 
 .weat-sym {
   position: absolute;
-  left: 25px;
+  left: 32px;
   top: 164px;
   font-size: 7px;
 }
