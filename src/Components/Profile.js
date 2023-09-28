@@ -23,12 +23,7 @@ const Profile = () => {
         ))}
       </div>
 
-      <div>
-        <span className="weather-box1"></span>
-      </div>
-      <div>
-      <span className="weather-time " ></span>
-      </div>
+    
     </div>
   );
 };

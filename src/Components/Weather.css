@@ -1,0 +1,101 @@
+.weather-box1 {
+  position: absolute;
+  width: 225px;
+  height: 73px;
+  top: 138px;
+  left: 20px;
+  border-radius: 19px;
+  background: #101744;
+}
+
+.weather-time {
+  position: absolute;
+  width: 225px;
+  height: 23px;
+  top: 138px;
+  left: 20px;
+  border-radius: 19px, 0px;
+  background: #ff4ade;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+.temp {
+  position: absolute;
+  font-size: 14px;
+  top: 153px;
+  left: 102px;
+  color: #ffffff;
+}
+
+.wind{
+    position: absolute;
+    left: 172px;
+    top: 164px;
+}
+
+.wind-speed {
+    position: absolute;
+    color: #ffffff;
+    font-size: 10px;
+    left: 194px;
+    top: 156px;
+}
+
+
+.humidity{
+    position: absolute;
+    left: 172px;
+    top: 185px;
+}
+
+.humid-value {
+    position: absolute;
+    color: #ffffff;
+    font-size: 10px;
+    left: 188px;
+    top: 178px;
+}
+
+.termo {
+    position: absolute;
+    left: 92px;
+    top: 185px;
+}
+
+.pressure {
+    position: absolute;
+    color: #ffffff;
+    font-size: 10px;
+    left: 104px;
+    top: 178px;
+}
+
+.line2 {
+  position: absolute;
+  left: 149px;
+  top: 168px;
+}
+
+.line3 {
+  position: absolute;
+  left: 70px;
+  top: 168px;
+}
+
+.reading {
+  position: absolute;
+  color: #ffffff;
+  left: 24px;
+  top: 181px;
+  font-size: 8px;
+}
+
+.weat-sym {
+  position: absolute;
+  left: 25px;
+  top: 164px;
+  font-size: 7px;
+}

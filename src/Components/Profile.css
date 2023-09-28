@@ -123,22 +123,3 @@
   background: #9f94ff;
 }
 
-.weather-box1 {
-  position: absolute;
-  width: 225px;
-  height: 65px;
-  top: 138px;
-  left: 20px;
-  border-radius: 19px;
-  background: #101744;
-}
-
-.weather-time {
-  position: absolute;
-  width: 225px;
-  height: 23px;
-  top: 138px;
-  left: 20px;
-  border-radius: 19px,0px;
-  background: #ff4ade;
-}
