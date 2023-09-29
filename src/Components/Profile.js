@@ -4,6 +4,8 @@ import proimg from "../images/profileimg.png";
 // import { useNavigate } from "react-router-dom";
 import Note from "./Notes";
 import Weather from "./Weather";
+import Timebox from "./Timebox"
+import News from "./News"
 
 const Profile = () => {
   const userData = JSON.parse(localStorage.getItem("userData"));
@@ -27,6 +29,8 @@ const Profile = () => {
           <div>
             <Weather/>
             <Note/>
+            <Timebox/>
+            <News/> 
           </div>
     
     </div>
