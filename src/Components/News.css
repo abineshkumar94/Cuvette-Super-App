@@ -49,21 +49,23 @@
 .pre-btn {
   position: absolute;
   top: 297px;
-  width: 20px;
+  width: 0px;
   left: 0px;
   border-radius: 8px;
   border: none;
   text-align: center;
   height: 2px;
+  background: #ffffff;
 }
 
 .nxt-btn {
   position: absolute;
   top: 297px;
-  width: 20px;
+  width: 0px;
   left: 230px;
   border-radius: 8px;
   border: none;
   text-align: center;
   height: 2px;
+  background: #ffffff;
 }

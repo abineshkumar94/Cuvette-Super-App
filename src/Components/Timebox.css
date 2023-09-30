@@ -1,9 +1,90 @@
-.t-box {
+.container4 {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 463px;
-  height: 100px;
-  top: 236px;
-  left: 20px;
-  border-radius: 19px;
-  background: #1e2343;
+  width: 61.5vw;
+  background-color: #1e2343;
+  text-align: center;
+  color: white;
+  height: 34vh;
+  margin-top: 210px;
+  border-radius: 10px;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+  color: #949494;
+}
+
+.Timer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Timer p {
+  line-height: 3;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-top: -3px;
+}
+
+.Timer img {
+  position: absolute;
+  cursor: pointer;
+  width: 12px;
+  top: 35px;
+  margin-left: -10px;
+  letter-spacing: 10px;
+}
+
+.Timer h2 {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  top: 28px;
+  margin-left: 17px;
+}
+
+.start {
+  width: 140px;
+  height: 22px;
+  top: 88px;
+  position: absolute;
+  left: 50%;
+  background-color: #ff6a6a;
+  color: white;
+  font-size: 8px;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 10px;
+  bottom: 50px; 
+  border: #ff6a6a;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  letter-spacing: 2px;
+  line-height: 1px;
+
+}
+
+.start:hover {
+  transform: translateY(-1px);
+}
+
+.Timer h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: -40px;
+}
+
+.Countdown {
+  padding-top: 12px;
+  color: white;
+  margin-top: -18px;
+}
+
+.hrs {
+  margin-left: 20px;
+}
+
+.downaro {
+  margin-bottom: 10px;
 }

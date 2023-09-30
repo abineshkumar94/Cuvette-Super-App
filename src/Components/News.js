@@ -9,7 +9,7 @@ function News() {
     const fetchNews = async () => {
       try {
         const apiUrl =
-          "https://newsapi.org/v2/top-headlines?country=in&apiKey=21da23f145f34e4a9c154e120ed933b2";
+          "https://newsapi.org/v2/top-headlines?country=us&apiKey=21da23f145f34e4a9c154e120ed933b2";
         const response = await fetch(apiUrl);
 
         if (!response.ok) {
