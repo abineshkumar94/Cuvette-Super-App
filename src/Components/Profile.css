@@ -155,4 +155,24 @@
   background: #9f94ff;
 }
 
+.b-btn {
+  position: absolute;
+  left: 630px;
+  top: 350px;
+}
 
+.browse-btn {
+  background: rgba(20, 138, 8, 1);
+  border-radius: 34.78px;
+  border: none;
+  width: 100px;
+  height: 20px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color:  rgba(255, 255, 255, 1);
+
+}

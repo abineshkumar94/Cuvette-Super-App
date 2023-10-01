@@ -4,6 +4,7 @@ import "./App.css";
 import Page2 from "./Components/Catagory";
  import { Routes, Route, Navigate } from "react-router-dom";
 import Profile from "./Components/Profile"
+import Browse from "./Components/Browse";
 // import Weather from "./Components/Weather";
 // import Note from "./Components/Notes";
 
@@ -19,8 +20,7 @@ const App = () => {
         element={formSubmitted ? <Page2 /> : <Navigate to="/" />}
       />
       <Route path="Profile" element={<Profile/>} ></Route>
-      {/* <Route path="Weather" element={<Weather/>} ></Route> */}
-      {/* <Route path="Note" element={<Note/>} ></Route> */}
+      <Route path="Browse" element={<Browse/>} > </Route>
     </Routes>
     
   );

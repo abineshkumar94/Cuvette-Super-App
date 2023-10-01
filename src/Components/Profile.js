@@ -1,16 +1,20 @@
 import "./Profile.css";
 import React from "react";
 import proimg from "../images/profileimg.png";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Note from "./Notes";
 import Weather from "./Weather";
-import Timebox from "./Timebox"
-import News from "./News"
+import Timebox from "./Timebox";
+import News from "./News";
 
 const Profile = () => {
+  const navigate = useNavigate();
   const userData = JSON.parse(localStorage.getItem("userData"));
   const selectedCategories =
     JSON.parse(localStorage.getItem("selectedCategories")) || [];
+  const handleBrowseButtonClick = () => {
+    navigate("/Browse");
+  };
   return (
     <div className="pro-box">
       <div className="pro-img">
@@ -26,13 +30,18 @@ const Profile = () => {
           </span>
         ))}
       </div>
-          <div>
-            <Weather/>
-            <Note/>
-            <Timebox/>
-            <News/> 
-          </div>
-    
+      <div>
+        <Weather />
+        <Note />
+        <Timebox />
+        <News />
+      </div>
+
+      <div className="b-btn">
+        <button className="browse-btn" onClick={handleBrowseButtonClick}>
+          Browse
+        </button>
+      </div>
     </div>
   );
 };

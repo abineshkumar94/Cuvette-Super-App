@@ -9,15 +9,20 @@ import catimg6 from "../images/horror.png";
 import catimg7 from "../images/fantasy.png";
 import catimg8 from "../images/music.png";
 import catimg9 from "../images/fiction.png";
+import { useNavigate } from "react-router-dom"; 
 
 const Page2 = () => {
+  const navigate = useNavigate(); 
+
   const [selectedCategories, setSelectedCategories] = useState(
-    JSON.parse(localStorage.getItem("selectedCategories")) || [])
-  const [hideMinimumCategoriesText, setHideMinimumCategoriesText] = useState(false);
+    JSON.parse(localStorage.getItem("selectedCategories")) || []
+  );
+  const [hideMinimumCategoriesText, setHideMinimumCategoriesText] = useState(
+    false
+  );
   const [hideNextButton, setHideNextButton] = useState(true);
 
   useEffect(() => {
-    
     if (selectedCategories.length >= 3) {
       setHideMinimumCategoriesText(true);
       setHideNextButton(false);
@@ -25,13 +30,16 @@ const Page2 = () => {
       setHideMinimumCategoriesText(false);
       setHideNextButton(true);
     }
-    localStorage.setItem("selectedCategories", JSON.stringify(selectedCategories));
+    localStorage.setItem(
+      "selectedCategories",
+      JSON.stringify(selectedCategories)
+    );
   }, [selectedCategories]);
 
   const handleCategoryClick = (category) => {
     if (!selectedCategories.includes(category)) {
       setSelectedCategories([...selectedCategories, category]);
-      
+
       const categoryButton = document.querySelector(`.btn${category}`);
       if (categoryButton) {
         categoryButton.classList.add("selected-card");
@@ -42,12 +50,17 @@ const Page2 = () => {
   const removeCategory = (category) => {
     const updatedCategories = selectedCategories.filter((c) => c !== category);
     setSelectedCategories(updatedCategories);
-    
+
     const categoryButton = document.querySelector(`.btn${category}`);
     if (categoryButton) {
       categoryButton.classList.remove("selected-card");
     }
   };
+
+  const handleNextButtonClick = () => {
+    navigate("/profile"); 
+  };
+  
 
   return (
     <div>
@@ -200,7 +213,7 @@ const Page2 = () => {
       {/* Next page button */}
       {!hideNextButton && (
         <div className="next-btn-div">
-          <button className="btn-next">
+          <button className="btn-next" onClick={handleNextButtonClick} >
             <p className="btn-next-text">Next page</p>
           </button>
         </div>
